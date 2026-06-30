@@ -1,4 +1,4 @@
-# 🎓 DIU Admission Helper
+# 🎓 DIU Info Corner
 
 A smart and user-friendly application designed to help prospective students get all necessary admission-related information about **Daffodil International University (DIU)** in one place.
 
@@ -10,7 +10,7 @@ The application provides department information, waiver details, seat availabili
 
 Every year, many students face difficulties finding accurate admission information such as department details, available seats, waiver opportunities, and admission requirements.
 
-**DIU Admission Helper** solves this problem by providing a centralized platform where students can easily access all admission-related information.
+**DIU Info Corner** solves this problem by providing a centralized platform where students can easily access all admission-related information.
 
 ---
 
