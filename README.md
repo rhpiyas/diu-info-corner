@@ -116,7 +116,16 @@ If you find any issues, feel free to create an issue or submit a pull request.
 
 ---
 
+## 👨‍💻 Author
 
+**Rakib Hasan Piyas**  
+🎓 Department of Software Engineering
+🏫 Daffodil International University  
+
+Passionate about programming, software development, and building practical solutions through technology.
+
+🔗 GitHub: [https://github.com/rhpiyas]  
+📧 Email: [rakibhasanpiyas97@gmail.com]
 
 ---
 
