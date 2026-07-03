@@ -132,6 +132,26 @@ void login()
     }
 }
 
+void aboutApp()
+{
+    printf("DIU Info Corner > About this App \n\n");
+
+    printf("App Name      :  DIU Info Corner\n");
+    printf("App Version   :  1.0.0(beta)\n\n");
+    printf("Developed by  :  Rakib Hasan Piyas  242-35-182\n");
+    printf("                 Department of Software Engineering\n");
+    printf("                 Batch : SWE 43\n");
+    printf("                 Daffodil International University\n\n");
+
+    printf("Disclaimer    :  This app is not an official DIU application.\n");
+    printf("                 Data is collected from public sources such as the DIU website,\n");
+    printf("                 and the admission office.\n");
+    printf("                 For the latest and most accurate updates,\n");
+    printf("                 Please contact the DIU Admission Office directly.\n\n");
+
+    clearScreen();
+}
+
 int main()
 {
     
