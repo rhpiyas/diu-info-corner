@@ -377,6 +377,22 @@ void admissionTest()
     clearScreen();
 }
 
+void help()
+{
+    printf("DIU Info Corner > Login > User Panel > Help and Support\n\n");
+
+    printf("\n          Help and Support\n");
+    printf("-------------------------------------\n\n");
+
+    printf("For any kind of help,\n");
+    printf("     Please contact with the Admin Team.\n\n");
+    printf("Admin Contact List:\n");
+    printf("1. Rakib Hasan Piyas - 01632725621\n");
+
+    printf("We are always ready to help you!\n\n");
+    clearScreen();
+}
+
 int main()
 {
     
