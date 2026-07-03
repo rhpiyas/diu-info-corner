@@ -27,6 +27,20 @@ struct User admins[5] =
         {"01853828261", "atikur242-35-632@diu.edu.bd", "2481"}
     };
 
+int isAdmin(char *phone, char *pin)
+{
+    for (int i = 0; i < 5; i++)
+    {
+        if (strcmp(phone, admins[i].phone) == 0 &&
+            strcmp(pin, admins[i].pin) == 0)
+        {
+            return 1;
+        }
+    }
+    return 0;
+}
+
+
 int main()
 {
     
