@@ -70,6 +70,68 @@ void registerUser()
     login();
 }
 
+void login()
+{
+    printf("DIU Info Corner > Login >\n");
+    char phone[20], pin[5];
+
+    printf("\n      Login to DIU Info Corner\n");
+    printf("-------------------------------------\n\n");
+
+    printf("Enter phone number: ");
+    scanf("%s", phone);
+    printf("Enter 4-digit PIN: ");
+    scanf("%s", pin);
+
+    if (isAdmin(phone, pin))
+    {
+        printf("\n------------------------------------\n");
+        printf("|    Login successful as Admin!    |\n");
+        printf("------------------------------------\n\n");
+        clearScreen();
+        adminMode();
+    }
+    else
+    {
+        FILE *fp = fopen("users.txt", "r");
+        if (!fp)
+        {
+            printf("User Data file is empty!\n\n");
+            return;
+        }
+
+        struct User u;
+        int found = 0;
+
+        while (fscanf(fp, "%s %s %s", u.phone, u.email, u.pin) != EOF)
+        {
+            if (strcmp(phone, u.phone) == 0 &&
+                strcmp(pin, u.pin) == 0)
+            {
+                found = 1;
+                break;
+            }
+        }
+        fclose(fp);
+
+        if (found)
+        {
+            printf("\n---------------------------------------------\n");
+            printf("| User login successful! Welcome %s  |\n", phone);
+            printf("---------------------------------------------\n\n");
+            clearScreen();
+            userMode();
+        }
+        else
+        {
+            printf("\n-----------------------------------\n");
+            printf("|     Incorrect Phone or PIN!     |\n");
+            printf("-----------------------------------\n\n");
+            clearScreen();
+        }
+    }
+}
+
 int main()
 {
     
