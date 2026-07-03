@@ -11,6 +11,13 @@ void userMode();
 void adminFunc();
 void clearScreen();
 
+struct User
+{
+    char phone[20];
+    char email[50];
+    char pin[5];
+};
+
 int main()
 {
     
