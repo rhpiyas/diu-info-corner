@@ -224,6 +224,16 @@ void updateData()
     clearScreen();
 }
 
+void deleteData()
+{
+    printf("\n          Delete User Data\n");
+    printf("-------------------------------------\n\n");
+
+    printf("\a             !!!Sorry!!!\n");
+    printf("This Features is corrently Unavailable!\n\n");
+    clearScreen();
+}
+
 int main()
 {
     
