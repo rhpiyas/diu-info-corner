@@ -677,6 +677,34 @@ void deptinfo()
     }
 }
 
+void seat()
+{
+    printf("DIU Info Corner > Login > User Panel > Total Seat\n\n");
+
+    printf("\n       Total Seat per Departemnt\n");
+    printf("-------------------------------------\n\n");
+
+    printf("CSE      : Total Seat 800\n");
+    printf("SWE      : Total Seat 600\n");
+    printf("CIS      : Total Seat 100\n");
+    printf("EEE      : Total Seat 400\n");
+    printf("CIVIL    : Total Seat 400\n");
+    printf("BBA      : Total Seat 300\n");
+    printf("PHARMACY : Total Seat 100\n");
+    printf("NFE      : Total Seat 400\n");
+    printf("LAW      : Total Seat 100\n");
+    printf("B. Arch  : Total Seat 70\n");
+    printf("TE       : Total Seat 300\n");
+    printf("MCT      : Total Seat 50\n");
+    printf("English  : Total Seat 300\n");
+    printf("JMC      : Total Seat 50\n");
+    printf("ESDM     : Total Seat 100\n\n");
+
+    printf("Each section consists of 50 students.\n");
+    printf("Note: Seat numbers are approximate and may change.\n\n\n");
+    clearScreen();
+}
+
 int main()
 {
     
