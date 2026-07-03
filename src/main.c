@@ -159,6 +159,30 @@ void clearScreen()
     system("cls");
 }
 
+void countReg()
+{
+    printf("\n          Registered User\n");
+    printf("-------------------------------------\n\n");
+
+    FILE *fp = fopen("users.txt", "r");
+    if (!fp)
+    {
+        return;
+    }
+
+    int count = 0;
+    char phone[20], email[50], pin[5];
+
+    while (fscanf(fp, "%s %s %s", phone, email, pin) == 3)
+    {
+        count++;
+    }
+    fclose(fp);
+
+    printf("Total Registered Users: %d\n\n", count);
+    clearScreen();
+}
+
 int main()
 {
     
