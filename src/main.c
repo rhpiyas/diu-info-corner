@@ -249,6 +249,86 @@ void updateApp()
     clearScreen();
 }
 
+void hallInfo()
+{
+    int hall;
+    while (1)
+    {
+        printf("DIU Info Corner > Login > User Panel > Hall Info >\n\n");
+
+        printf("\n   Residential Halls at Daffodil International University (DIU)\n");
+        printf("-------------------------------------------------------------------\n\n");
+
+        printf("1. Male Hall\n");
+        printf("2. Female Hall\n");
+        printf("3. <<<Back\n\n");
+
+        printf("Enter Your Choice : ");
+        scanf("%d", &hall);
+        switch (hall)
+        {
+        case 1:
+        {
+            system("cls");
+
+            printf("DIU Info Corner > Login > User Panel > Hall Info > Male\n\n");
+
+            printf("\n           Male Hall\n");
+            printf("----------------------------------\n\n");
+
+            printf("1. Yunus Khan Scholar Garden - 1\n");
+            printf("        Capacity: 1,600 students\n");
+            printf("        Number of Buildings: 2\n");
+
+            printf("2. Yunus Khan Scholar Garden - 2\n");
+            printf("        Capacity: 2,000 students\n");
+            printf("        Number of Buildings: 2\n");
+
+            printf("3. Yunus Khan Scholar Garden - 3\n");
+            printf("        Capacity: 500 students\n");
+            printf("        Number of Buildings: 1\n");
+
+            printf("\nHall Fee : BDT. 3,500 per month(Have to pay Semester wise)\n");
+            printf("Registration Fee : BDT. 3,000\n\n");
+            clearScreen();
+            break;
+        }
+        case 2:
+        {
+            system("cls");
+
+            printf("DIU Info Corner > Login > User Panel > Hall Info > Female\n\n");
+
+            printf("\n          Female Hall\n");
+            printf("----------------------------------\n\n");
+
+            printf("1. Rowshan Ara Scholar Garden - 1\n");
+            printf("        Capacity: 1,000 students\n");
+            printf("        Number of Buildings: 2\n");
+
+            printf("2. Rowshan Ara Scholar Garden - 2\n");
+            printf("        Capacity: 1,200 students\n");
+            printf("        Number of Buildings: 1\n");
+
+            printf("\nHall Fee : BDT. 3,500 per month(Have to pay semester wise)\n");
+            printf("Registration Fee : BDT. 3,000\n\n");
+            clearScreen();
+            break;
+        }
+        case 3:
+        {
+            system("cls");
+            return;
+        }
+        default:
+        {
+            printf("\n\aInvalid choice!\n\n");
+            clearScreen();
+        }
+        }
+    }
+}
+
 int main()
 {
     
