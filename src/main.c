@@ -40,6 +40,35 @@ int isAdmin(char *phone, char *pin)
     return 0;
 }
 
+void registerUser()
+{
+    printf("DIU Info Corner > Registration >\n");
+
+    FILE *fp = fopen("users.txt", "a");
+    if (!fp)
+    {
+        printf("Error opening file!\n");
+        return;
+    }
+
+    struct User u;
+    printf("\n          User Registration\n");
+    printf("-------------------------------------\n\n");
+    printf("Enter phone number: ");
+    scanf("%s", u.phone);
+    printf("Enter email: ");
+    scanf("%s", u.email);
+    printf("Enter 4-digit PIN: ");
+    scanf("%s", u.pin);
+
+    fprintf(fp, "%s %s %s\n", u.phone, u.email, u.pin);
+    fclose(fp);
+
+    printf("\n---------------------------------------------------\n");
+    printf("|    Registration successful! Now Login Please!   |\n");
+    printf("---------------------------------------------------\n\n");
+    login();
+}
 
 int main()
 {
