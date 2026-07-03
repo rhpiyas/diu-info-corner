@@ -329,6 +329,33 @@ void hallInfo()
     }
 }
 
+void directAdmission()
+{
+    printf("DIU Info Corner > Login > User Panel > Direct Admission\n\n");
+
+    float ssc, hsc;
+    printf("\n    DIU Direct Admission Eligibility Checker\n");
+    printf("----------------------------------------------------\n\n");
+    printf("Enter SSC GPA: ");
+    scanf("%f", &ssc);
+    printf("Enter HSC GPA: ");
+    scanf("%f", &hsc);
+
+    if (ssc >= 4.5f && hsc >= 4.5f)
+    {
+        printf("\nCongratulations!!!  You are Eligle for DIRECT ADMISSION.\n");
+        printf("Note: University may still verify subject requirements and make final decision.\n\n");
+        clearScreen();
+    }
+    else
+    {
+        printf("\nResult: You do NOT meet the 4.5+ GPA criteria in both SSC and HSC!.\n");
+        printf("       => You are likely required to sit the DIU admission test.\n");
+        printf("For more Information, Please select Admission Test Info from User Panel!\n\n");
+        clearScreen();
+    }
+}
+
 int main()
 {
     
