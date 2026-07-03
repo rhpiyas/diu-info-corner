@@ -152,6 +152,13 @@ void aboutApp()
     clearScreen();
 }
 
+void clearScreen()
+{
+    printf("Press any key to Clear and Continue...\n");
+    getch();
+    system("cls");
+}
+
 int main()
 {
     
