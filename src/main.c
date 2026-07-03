@@ -393,6 +393,290 @@ void help()
     clearScreen();
 }
 
+void deptinfo()
+{
+    int choice;
+
+    while (1)
+    {
+        printf("DIU Info Corner > Login > User Panel > Dept Info\n\n");
+
+        printf("\n        Department Information\n");
+        printf("-------------------------------------\n\n");
+
+        printf("Available Information for Department of :\n");
+        printf("1. CSE       2. SWE      3. CIS\n");
+        printf("4. EEE       5. Civil    6. BBA\n");
+        printf("7. Pharmacy  8. NFE      9. LAW\n");
+        printf("10. B.Arch.  11. TE      12. MCT\n");
+        printf("13. English  14. JMC     15. ESDM\n");
+        printf("16. <<<Back\n");
+        printf("\nMore Department will be added soon!\n\n");
+
+        printf("Enter your choice : ");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 1:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > CSE\n\n");
+            printf("\n  B. Sc. in Computer Science and Engineering.(CSE)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Tri-semester\n");
+            printf("Credit Hours      : 154.5\n");
+            printf("Admission Fees    : 51,867 BDT\n");
+            printf("Semester Cost     : 75,000 BDT\n");
+            printf("Total Cost        : 9,31,800 BDT\n\n");
+
+            clearScreen();
+            break;
+
+        case 2:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > SWE\n\n");
+            printf("\n         B. Sc. in Software Engineering.(SWE)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Tri-semester\n");
+            printf("Credit Hours      : 145\n");
+            printf("Admission Fees    : 51,867 BDT\n");
+            printf("Semester Cost     : 70,000 BDT\n");
+            printf("Total Cost        : 8,71,200 BDT\n\n");
+
+            clearScreen();
+            break;
+        case 3:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > CIS\n\n");
+            printf("\n   B. Sc. in Computing and Information System.(CIS)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Tri-semester\n");
+            printf("Credit Hours      : 142\n");
+            printf("Admission Fees    : 50,667 BDT\n");
+            printf("Semester Cost     : 58,000 BDT\n");
+            printf("Total Cost        : 7,12,500 BDT\n\n");
+
+            clearScreen();
+            break;
+        case 4:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > EEE\n\n");
+            printf("\nB. Sc. in Electrical and Electronic Engineering.(EEE)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 8\n");
+            printf("Semester Type     : Bi-semester\n");
+            printf("Credit Hours      : 144\n");
+            printf("Admission Fees    : 58,400 BDT\n");
+            printf("Semester Cost     : 92,000 BDT\n");
+            printf("Total Cost        : 7,63,200 BDT\n\n");
+
+            clearScreen();
+            break;
+        case 5:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > CIVIL\n\n");
+            printf("\n          B. Sc. in Civil Engineering.(CE)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 8\n");
+            printf("Semester Type     : Bi-semester\n");
+            printf("Credit Hours      : 147\n");
+            printf("Admission Fees    : 59,000 BDT\n");
+            printf("Semester Cost     : 91,000 BDT\n");
+            printf("Total Cost        : 7,53,075 BDT\n\n");
+
+            clearScreen();
+            break;
+        case 6:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > BBA\n\n");
+            printf("\n      Bachelor of Business Administration.(BBA)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Tri-semester\n");
+            printf("Credit Hours      : 130\n");
+            printf("Admission Fees    : 56,450 BDT\n");
+            printf("Semester Cost     : 60,000 BDT\n");
+            printf("Total Cost        : 7,43,200 BDT\n\n");
+
+            clearScreen();
+            break;
+        case 7:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > PHARMACY\n\n");
+            printf("\n           Bachelor of Pharmacy.(B. Pharm)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 8\n");
+            printf("Semester Type     : Bi-semester\n");
+            printf("Credit Hours      : 160\n");
+            printf("Admission Fees    : 66,000 BDT\n");
+            printf("Semester Cost     : 1,22,500 BDT\n");
+            printf("Total Cost        : 10,08,200 BDT\n\n");
+
+            clearScreen();
+            break;
+        case 8:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > NFE\n\n");
+            printf("\n   Bachelor of Nutrition and Food Engineering.(NFE)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Tri-semester\n");
+            printf("Credit Hours      : 151\n");
+            printf("Admission Fees    : 49,200 BDT\n");
+            printf("Semester Cost     : 50,000 BDT\n");
+            printf("Total Cost        : 6,20,450 BDT\n\n");
+
+            clearScreen();
+            break;
+        case 9:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > LAW\n\n");
+            printf("\n                    LL.B. (Hons.)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Bi-semester\n");
+            printf("Credit Hours      : 144\n");
+            printf("Admission Fees    : 1,30,000 BDT\n");
+            printf("Semester Cost     : 1,04,000 BDT\n");
+            printf("Total Cost        : 8,54,200 BDT\n\n");
+
+            clearScreen();
+            break;
+
+        case 10:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > B. Arch.\n\n");
+            printf("\n         Bachelor of Architecture (B. Arch.)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 5 Years\n");
+            printf("Total Semesters   : 10\n");
+            printf("Semester Type     : Bi-semester\n");
+            printf("Credit Hours      : 194\n");
+            printf("Admission Fees    : 55,100 BDT\n");
+            printf("Semester Cost     : 85,000 BDT\n");
+            printf("Total Cost        : 8,72,700 BDT\n\n");
+
+            clearScreen();
+            break;
+
+        case 11:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > TE\n\n");
+            printf("\n          B.Sc. in Textile Engineering (TE)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 8\n");
+            printf("Semester Type     : Bi-semester\n");
+            printf("Credit Hours      : 154\n");
+            printf("Admission Fees    : 59,200 BDT\n");
+            printf("Semester Cost     : 85,000 BDT\n");
+            printf("Total Cost        : 7,04,200 BDT\n\n");
+
+            clearScreen();
+            break;
+
+        case 12:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > MCT\n\n");
+            printf("\n   B.Sc. in Multimedia & Creative Technology (MCT)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Tri-semester\n");
+            printf("Credit Hours      : 147\n");
+            printf("Admission Fees    : 50,467 BDT\n");
+            printf("Semester Cost     : 55,000 BDT\n");
+            printf("Total Cost        : 6,83,850 BDT\n\n");
+
+            clearScreen();
+            break;
+
+        case 13:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > English\n\n");
+            printf("\n               B.A. (Hons) in English\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Tri-semester\n");
+            printf("Credit Hours      : 130\n");
+            printf("Admission Fees    : 52,000 BDT\n");
+            printf("Semester Cost     : 50,000 BDT\n");
+            printf("Total Cost        : 6,20,000 BDT\n\n");
+
+            clearScreen();
+            break;
+
+        case 14:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > JMC\n\n");
+            printf("\n   BSS in Journalism, Media and Communication (JMC)\n");
+            printf("-----------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Tri-semester\n");
+            printf("Credit Hours      : 142\n");
+            printf("Admission Fees    : 52,067 BDT\n");
+            printf("Semester Cost     : 45,000 BDT\n");
+            printf("Total Cost        : 5,53,600 BDT\n\n");
+
+            clearScreen();
+            break;
+
+        case 15:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Dept Info > ESDM\n\n");
+            printf("\n  B.Sc. in Environmental Science and Disaster Management (ESDM)\n");
+            printf("-----------------------------------------------------------------\n\n");
+
+            printf("Program Duration  : 4 Years\n");
+            printf("Total Semesters   : 12\n");
+            printf("Semester Type     : Tri-semester\n");
+            printf("Credit Hours      : 146\n");
+            printf("Admission Fees    : 46,867 BDT\n");
+            printf("Semester Cost     : 44,000 BDT\n");
+            printf("Total Cost        : 5,51,200 BDT\n\n");
+
+            clearScreen();
+            break;
+
+        case 16:
+            system("cls");
+            return;
+
+        default:
+            printf("\n\a<<<Invalid choice!>>>\n\n");
+            clearScreen();
+        }
+    }
+}
+
 int main()
 {
     
