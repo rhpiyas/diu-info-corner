@@ -183,6 +183,37 @@ void countReg()
     clearScreen();
 }
 
+void userData()
+{
+    printf("\n          Registration Data\n");
+    printf("-------------------------------------\n\n");
+
+    FILE *fp = fopen("users.txt", "r");
+    if (!fp)
+    {
+        printf("\nNo registered users found!\n\n");
+        return;
+    }
+
+    char phone[20], email[50], pin[5];
+    int count = 0;
+
+    while (fscanf(fp, "%s %s %s", phone, email, pin) == 3)
+    {
+        count++;
+        printf("%d. Phone: %s | Email: %s | PIN: %s\n", count, phone, email, pin);
+    }
+    printf("\n\n");
+
+    if (count == 0)
+    {
+        printf("\nNo users found!\n\n");
+    }
+
+    fclose(fp);
+    clearScreen();
+}
+
 int main()
 {
     
