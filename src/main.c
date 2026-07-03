@@ -705,6 +705,80 @@ void seat()
     clearScreen();
 }
 
+void waiver()
+{
+    int choice;
+    while (1)
+    {
+        printf("DIU Info Corner > Login > User Panel > Waiver >\n\n");
+
+        printf("\n           Waiver Category\n");
+        printf("-------------------------------------\n\n");
+
+        printf("1. Result-Based Waiver (SSC and HSC)\n");
+        printf("2. CGPA-Based Waiver\n");
+        printf("3. <<<Back\n\n");
+
+        printf("Enter your choice : ");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 1:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Waiver > Result-Based\n\n");
+
+            printf("\n         Result-Based Waiver\n");
+            printf("-------------------------------------\n\n");
+
+            printf("RESULT-BASED WAIVER (SSC AND HSC/UNDER GRADUATE)\n");
+            printf("DIU offers the tuition fee waiver for the students on the basis of their results\n");
+            printf("in SSC & HSC or equivalent exam including fourth subject in the following categories:\n\n");
+
+            printf("Qualification                                 Waiver     Min CGPA\n");
+            printf("---------------------------------------      --------   ----------\n");
+            printf("Golden GPA-5 both in SSC and in HSC           75%%       3.50\n");
+            printf("Golden GPA-5 in HSC                           50%%       3.25\n");
+            printf("GPA-5 both in SSC and in HSC                  35%%       3.25\n");
+            printf("GPA-5 in HSC                                  25%%       3.00\n");
+            printf("4.90-4.99 in HSC                              20%%       3.00\n");
+            printf("4.75-4.89 in HSC                              10%%       3.00\n");
+            printf("Below 4.75 in HSC                              0%%       0.00\n\n");
+
+            clearScreen();
+            break;
+        case 2:
+            system("cls");
+            printf("DIU Info Corner > Login > User Panel > Waiver > CGPA-Based\n\n");
+
+            printf("\n          CGPA-Based Waiver\n");
+            printf("-------------------------------------\n\n");
+
+            printf("CGPA-BASED WAIVER (DIU)\n");
+            printf("Tuition fee waiver for current students based on CGPA:\n\n");
+
+            printf("CGPA Range                         Waiver\n");
+            printf("-----------------                 --------\n");
+            printf("4.00                               50%%\n");
+            printf("3.90 - 3.99                        30%%\n");
+            printf("3.85 - 3.89                        20%%\n");
+            printf("3.80 - 3.84                        10%%\n");
+            printf("Below 3.80                          0%%\n\n");
+
+            clearScreen();
+            break;
+        case 3:
+            system("cls");
+            return;
+        default:
+            printf("\n\aInvalid choice!\n\n");
+            clearScreen();
+        }
+    }
+}
+
+
+
 int main()
 {
     
