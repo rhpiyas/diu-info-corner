@@ -234,6 +234,21 @@ void deleteData()
     clearScreen();
 }
 
+void updateApp()
+{
+    printf("\n          Update App Data\n");
+    printf("-------------------------------------\n\n");
+
+    printf("1. Update Departemnt Information\n");
+    printf("2. Update Seat Information\n");
+    printf("3. Update Hall Information\n");
+    printf("4. Update Admission Test Date\n\n");
+
+    printf("\a             !!!Sorry!!!\n");
+    printf("This Features is corrently Unavailable!\n\n");
+    clearScreen();
+}
+
 int main()
 {
     
