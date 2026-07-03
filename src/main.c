@@ -356,6 +356,27 @@ void directAdmission()
     }
 }
 
+void admissionTest()
+{
+    printf("DIU Info Corner > Login > User Panel > Admission Test Info\n\n");
+
+    printf("\n      Admission Test Information\n");
+    printf("-------------------------------------\n\n");
+
+    printf("Note: Admission test dates are subject to change.\n");
+    printf("For the most accurate and updated schedule,\n");
+    printf("Please contact the Admission Office directly.\n\n");
+    printf("Admission Office Phone Numbers:\n");
+    printf("1. +8801713493050   counselor@daffodilvarsity.edu.bd\n");
+    printf("2. +8801713493051   counselor3@daffodilvarsity.edu.bd\n");
+    printf("3. +8801847140017   counselor1@daffodilvarsity.edu.bd\n\n");
+
+    printf("Admission Helpline: +8809617901212\n");
+    printf("Email: admission@daffodilvarsity.edu.bd\n\n");
+
+    clearScreen();
+}
+
 int main()
 {
     
