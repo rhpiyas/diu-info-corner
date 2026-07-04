@@ -777,6 +777,47 @@ void waiver()
     }
 }
 
+void adminMode()
+{
+    int mood;
+    while (1)
+    {
+        printf("DIU Info Corner > Login > Admin Mood >\n\n");
+
+        printf("\n            Welcome Admin!\n");
+        printf("-------------------------------------\n\n");
+
+        printf("You can use DIU Info Corner as a Normal User.\n");
+        printf("You have the Access of Admin Mood!\n\n");
+
+        printf("1. User Panel\n");
+        printf("2. Admin Panel\n");
+        printf("3. Logout\n\n");
+
+        printf("Enter Mood: ");
+        scanf("%d", &mood);
+
+        switch (mood)
+        {
+        case 1:
+            system("cls");
+            userMode();
+            break;
+        case 2:
+            system("cls");
+            adminFunc();
+            break;
+        case 3:
+            printf("Are you sure to Log Out???\n");
+            clearScreen();
+            return;
+        default:
+            printf("\n\a<<<Invalid choice!>>>\n\n");
+            clearScreen();
+        }
+    }
+}
+
 
 
 
