@@ -818,7 +818,62 @@ void adminMode()
     }
 }
 
+void adminFunc()
+{
+    int choice;
+    while (1)
+    {
+        printf("DIU Info Corner > Login > Admin Mood > Admin Panel > \n\n");
 
+        printf("\n       Welcome to Admin Panel!\n");
+        printf("-------------------------------------\n\n");
+
+        printf("1. View Total Registered Users\n");
+        printf("2. View All User Registration Data\n");
+        printf("3. Update User Data\n");
+        printf("4. Delete User Data\n");
+        printf("5. Update App Data (Dept. info, hall info etc.)\n");
+        printf("6. Exit Admin Panel\n\n");
+
+        printf("Enter Menu: ");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 1:
+            system("cls");
+            printf("DIU Info Corner > Login > Admin Mood > Admin Panel > Total Users\n\n");
+            countReg();
+            break;
+        case 2:
+            system("cls");
+            printf("DIU Info Corner > Login > Admin Mood > Admin Panel > User Data\n\n");
+            userData();
+            break;
+        case 3:
+            system("cls");
+            printf("DIU Info Corner > Login > Admin Mood > Admin Panel > Update Data\n\n");
+            updateData();
+            break;
+        case 4:
+            system("cls");
+            printf("DIU Info Corner > Login > Admin Mood > Admin Panel > Delete Data\n\n");
+            deleteData();
+            break;
+        case 5:
+            system("cls");
+            printf("DIU Info Corner > Login > Admin Mood > Admin Panel > Update App\n\n");
+            updateApp();
+            break;
+        case 6:
+            system("cls");
+            return;
+        default:
+            printf("\n\a<<<Invalid choice!>>>\n\n");
+            clearScreen();
+        }
+    }
+}
 
 
 
