@@ -875,6 +875,67 @@ void adminFunc()
     }
 }
 
+void userMode()
+{
+    int choice;
+    while (1)
+    {
+        printf("DIU Info Corner > Login > User Panel > \n\n");
+        printf("\n       Welcome to User Panel!\n");
+        printf("-------------------------------------\n\n");
+
+        printf("1. View Departemnt Info\n");
+        printf("2. View Totol Seat per Departemnt\n");
+        printf("3. View Waiver\n");
+        printf("4. Check Direct Admission Eligibility\n");
+        printf("5. View Admission Test Info\n");
+        printf("6. View Hall Info\n");
+        printf("7. Help and Support\n");
+        printf("8. Logout User Panel\n\n");
+
+        printf("Enter Menu: ");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 1:
+            system("cls");
+            deptinfo();
+            break;
+        case 2:
+            system("cls");
+            seat();
+            break;
+        case 3:
+            system("cls");
+            waiver();
+            break;
+        case 4:
+            system("cls");
+            directAdmission();
+            break;
+        case 5:
+            system("cls");
+            admissionTest();
+            break;
+        case 6:
+            system("cls");
+            hallInfo();
+            break;
+        case 7:
+            system("cls");
+            help();
+            break;
+        case 8:
+            system("cls");
+            return;
+        default:
+            printf("\n\a<<<Invalid choice!>>>\n\n");
+            clearScreen();
+        }
+    }
+}
+
 
 
 int main()
