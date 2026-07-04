@@ -937,11 +937,53 @@ void userMode()
 }
 
 
-
 int main()
 {
-    
-    
+    int choice;
+    while (1)
+    {
+        printf("DIU Info Corner > \n\n");
+
+        printf("\n     Welcome to DIU Info Corner\n");
+        printf("-------------------------------------\n\n");
+
+        printf("You must login to access the Information!\n");
+        printf("Don't have an Account? Then Register first!\n\n");
+
+        printf("1. Register\n");
+        printf("2. Login\n");
+        printf("3. About this App\n");
+        printf("4. Exit\n\n");
+
+        printf("Enter Menu: ");
+        scanf("%d", &choice);
+        system("cls");
+
+        switch (choice)
+        {
+        case 1:
+            registerUser();
+            break;
+        case 2:
+            login();
+            break;
+        case 3:
+            system("cls");
+            aboutApp();
+            break;
+        case 4:
+            printf("DIU Info Corner > Exit\n\n");
+            printf("<<<Exiting>>>.....\n\n");
+            printf("Thank you for using DIU Info Corner!\n");
+            printf("Developed by : Rakib Hasan Piyas\n");
+
+            exit(0);
+        default:
+            printf("DIU Info Corner > \n\n");
+            printf("\a<<<Invalid choice!>>>\n\n");
+            clearScreen();
+        }
+    }
 
     return 0;
 }
