@@ -103,8 +103,10 @@ The project documentation includes:
 Project documents:
 
 - Software Requirement Specification (SRS)
+🔗 [https://github.com/rhpiyas/diu-info-corner/blob/main/docs/srs-diu-info-corner.pdf]  
+
 - Final Project Report
-- System Design Documentation
+🔗 [https://github.com/rhpiyas/diu-info-corner/blob/main/docs/final-report-diu-info-corner.pdf]  
 
 ---
 
@@ -126,7 +128,7 @@ Passionate about programming, software development, and building practical solut
 
 🔗 GitHub: [https://github.com/rhpiyas]  
 📧 Email: [rakibhasanpiyas97@gmail.com]
-
+🅾 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 : [https://instagram.com/rhpiyas]
 ---
 
 ⭐ If you find this project useful, consider giving it a star!
