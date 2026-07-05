@@ -14,6 +14,26 @@ Every year, many students face difficulties finding accurate admission informati
 
 ---
 
+## Function
+
+- ### User mode:
+  - Department info
+  - Total seat
+  - Waiver
+  - Direct admission availability
+  - Check admission test info
+  - Hall info
+  - Help and support
+
+- ### Admin mode:
+  - User function 
+  - View registered users
+  - View registration data
+  - Update user data
+  - Delete user data
+  - Update app data
+---
+
 ## 🚀 Features
 
 ### 👨‍🎓 Student Features
@@ -57,8 +77,6 @@ Every year, many students face difficulties finding accurate admission informati
 
 ### Tools
 - Git & GitHub
-- Android Studio
-- Figma *(if used)*
 
 ---
 
@@ -102,10 +120,10 @@ The project documentation includes:
 
 Project documents:
 
-- Software Requirement Specification (SRS)
+- Software Requirement Specification (SRS)  
 🔗 [https://github.com/rhpiyas/diu-info-corner/blob/main/docs/srs-diu-info-corner.pdf]  
 
-- Final Project Report
+- Final Project Report  
 🔗 [https://github.com/rhpiyas/diu-info-corner/blob/main/docs/final-report-diu-info-corner.pdf]  
 
 ---
@@ -121,13 +139,13 @@ If you find any issues, feel free to create an issue or submit a pull request.
 ## 👨‍💻 Author
 
 **Rakib Hasan Piyas**  
-🎓 Department of Software Engineering
+🎓 Department of Software Engineering  
 🏫 Daffodil International University  
 
 Passionate about programming, software development, and building practical solutions through technology.
 
 🔗 GitHub: [https://github.com/rhpiyas]  
-📧 Email: [rakibhasanpiyas97@gmail.com]
+📧 Email: [rakibhasanpiyas97@gmail.com]  
 🅾 𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 : [https://instagram.com/rhpiyas]
 ---
 
