@@ -602,6 +602,78 @@ th {
 	color: var(--brand-strong);
 }
 
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 16px;
+	flex-wrap: wrap;
+	width: min(1200px, calc(100% - 32px));
+	margin: 18px auto 34px;
+	padding: 18px 22px;
+	border: 1px solid var(--line);
+	border-radius: 24px;
+	background: rgba(255, 252, 245, 0.9);
+	box-shadow: var(--shadow);
+}
+
+.footer p {
+	margin: 0;
+	font-weight: 700;
+}
+
+.social-links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.social-links a {
+	width: 42px;
+	height: 42px;
+	display: inline-grid;
+	place-items: center;
+	border-radius: 50%;
+	border: 1px solid rgba(24, 30, 46, 0.12);
+	background: rgba(255, 255, 255, 0.88);
+	color: var(--brand-strong);
+	transition: transform 180ms ease, background 180ms ease, color 180ms ease, box-shadow 180ms ease;
+}
+
+.social-links a:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 14px 24px rgba(20, 28, 45, 0.12);
+}
+
+.social-links a.instagram:hover {
+	color: #e1306c;
+}
+
+.social-links a.linkedin:hover {
+	color: #0a66c2;
+}
+
+.social-links a.github:hover {
+	color: #111827;
+}
+
+.social-links a.codeforces:hover {
+	color: #1f6feb;
+}
+
+.social-links a i,
+.social-links a img {
+	display: block;
+	font-size: 1.1rem;
+	line-height: 1;
+}
+
+.social-links a.codeforces i {
+	font-size: 1.15rem;
+}
+
 @media (max-width: 1080px) {
 	.hero-grid,
 	.explorer-layout,
@@ -615,6 +687,18 @@ th {
 
 	.card-grid {
 		grid-template-columns: 1fr;
+	}
+
+	.footer {
+		width: min(100% - 18px, 1200px);
+		padding: 16px 18px;
+	}
+}
+
+@media (max-width: 640px) {
+	.footer {
+		flex-direction: column;
+		text-align: center;
 	}
 }
 
