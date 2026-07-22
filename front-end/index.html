@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="DIU Info Corner - a student-facing admission and information portal inspired by the C project." />
+	<title>DIU Info Corner</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="page-shell">
+		<header class="hero" id="top">
+			<nav class="topbar" aria-label="Primary">
+				<div class="brand">
+					<span class="brand-mark">DIU</span>
+					<div>
+						<p>Info Corner</p>
+						<span>Admission and student guide</span>
+					</div>
+				</div>
+				<div class="topbar-links">
+					<a href="#student">Student</a>
+					<a href="#departments">Departments</a>
+					<a href="#waivers">Waivers</a>
+					<a href="#admin">Admin</a>
+					<a href="#docs">Docs</a>
+				</div>
+			</nav>
+
+			<div class="hero-grid">
+				<div class="hero-copy">
+					<span class="eyebrow">Daffodil International University</span>
+					<h1>All admission information in one place.</h1>
+					<p>
+						DIU Info Corner brings the C project to life as a polished front end for students and administrators.
+						Explore departments, seat counts, waivers, direct admission eligibility, hall details, and support contacts.
+					</p>
+
+					<div class="hero-actions">
+						<a class="button button-primary" href="#checker">Check admission</a>
+						<a class="button button-secondary" href="#departments">Browse departments</a>
+					</div>
+
+					<div class="hero-stats" aria-label="Project highlights">
+						<article>
+							<strong>15</strong>
+							<span>Departments covered</span>
+						</article>
+						<article>
+							<strong>4.5</strong>
+							<span>Direct admission GPA floor</span>
+						</article>
+						<article>
+							<strong>2</strong>
+							<span>Waiver systems</span>
+						</article>
+					</div>
+				</div>
+
+				<aside class="hero-panel">
+					<div class="panel-card accent-card">
+						<span class="panel-label">Student mode</span>
+						<h2>Find what you need fast.</h2>
+						<ul>
+							<li>Department details with cost breakdowns</li>
+							<li>Total seat data for each program</li>
+							<li>Hall, test, and support information</li>
+						</ul>
+					</div>
+					<div class="panel-card muted-card">
+						<span class="panel-label">Admin mode</span>
+						<h2>Track users and app data.</h2>
+						<ul>
+							<li>View registered users</li>
+							<li>Inspect registration data</li>
+							<li>Update or maintain app content</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+		</header>
+
+		<main>
+			<section class="section" id="student">
+				<div class="section-heading">
+					<span class="eyebrow">Student panel</span>
+					<h2>Everything a future DIU student needs.</h2>
+					<p>
+						The original console app organizes content around registration, login, and a user panel.
+						This frontend keeps that structure but makes the information easier to scan.
+					</p>
+				</div>
+
+				<div class="feature-grid">
+					<article class="feature-card">
+						<h3>Department info</h3>
+						<p>Review duration, semesters, credit hours, and fees before selecting a program.</p>
+					</article>
+					<article class="feature-card">
+						<h3>Total seats</h3>
+						<p>See approximate seat counts for each department and compare program capacity.</p>
+					</article>
+					<article class="feature-card">
+						<h3>Waiver guide</h3>
+						<p>Understand both result-based and CGPA-based tuition waiver structures.</p>
+					</article>
+					<article class="feature-card">
+						<h3>Admission checker</h3>
+						<p>Enter SSC and HSC GPAs to estimate whether direct admission is available.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="section section-split" id="departments">
+				<div class="section-heading narrow">
+					<span class="eyebrow">Department explorer</span>
+					<h2>Compare the programs from the C code.</h2>
+					<p>Use the search field to narrow the list and click any department to inspect details.</p>
+					<label class="search-box" for="dept-search">
+						<span>Search department</span>
+						<input id="dept-search" type="search" placeholder="CSE, SWE, BBA..." />
+					</label>
+				</div>
+
+				<div class="explorer-layout">
+					<div class="card-grid" id="department-grid" aria-live="polite"></div>
+					<aside class="detail-card" id="department-detail" aria-live="polite">
+						<span class="panel-label">Selected department</span>
+						<h3>Choose a program.</h3>
+						<p>Select a card to view its structure, fees, and total estimated cost.</p>
+					</aside>
+				</div>
+			</section>
+
+			<section class="section section-split" id="seats">
+				<div class="section-heading narrow">
+					<span class="eyebrow">Seat matrix</span>
+					<h2>Seat counts at a glance.</h2>
+					<p>The C app lists approximate capacity per department. This version turns it into a readable table.</p>
+				</div>
+
+				<div class="table-card">
+					<table>
+						<thead>
+							<tr>
+								<th>Department</th>
+								<th>Approx. seats</th>
+								<th>Section size</th>
+							</tr>
+						</thead>
+						<tbody id="seat-body"></tbody>
+					</table>
+				</div>
+			</section>
+
+			<section class="section" id="waivers">
+				<div class="section-heading">
+					<span class="eyebrow">Waivers</span>
+					<h2>Result-based and CGPA-based tuition support.</h2>
+					<p>The app exposes two waiver paths: admission merit and current-student performance.</p>
+				</div>
+
+				<div class="waiver-grid">
+					<article class="info-panel">
+						<h3>Result-based waiver</h3>
+						<p>Applicable to SSC and HSC results, including the fourth subject.</p>
+						<div class="mini-table" id="result-waiver-table"></div>
+					</article>
+					<article class="info-panel">
+						<h3>CGPA-based waiver</h3>
+						<p>Applies to current students with strong DIU performance.</p>
+						<div class="mini-table" id="cgpa-waiver-table"></div>
+					</article>
+				</div>
+			</section>
+
+			<section class="section section-split" id="checker">
+				<div class="section-heading narrow">
+					<span class="eyebrow">Direct admission</span>
+					<h2>Check eligibility with the same rule as the C app.</h2>
+					<p>Both SSC and HSC GPAs must be at least 4.5 for direct admission eligibility.</p>
+				</div>
+
+				<div class="checker-grid">
+					<form class="checker-card" id="admission-form">
+						<label>
+							<span>SSC GPA</span>
+							<input id="ssc-gpa" type="number" min="0" max="5" step="0.01" placeholder="4.50" required />
+						</label>
+						<label>
+							<span>HSC GPA</span>
+							<input id="hsc-gpa" type="number" min="0" max="5" step="0.01" placeholder="4.50" required />
+						</label>
+						<button class="button button-primary" type="submit">Check eligibility</button>
+					</form>
+					<aside class="result-card" id="admission-result">
+						<span class="panel-label">Checker output</span>
+						<h3>Enter your GPAs.</h3>
+						<p>The result panel updates instantly after you submit the form.</p>
+					</aside>
+				</div>
+			</section>
+
+			<section class="section section-split" id="halls">
+				<div class="section-heading narrow">
+					<span class="eyebrow">Hall information</span>
+					<h2>Residential halls grouped by gender.</h2>
+					<p>The console app stores separate male and female hall information; the frontend mirrors that split.</p>
+				</div>
+
+				<div class="hall-grid" id="hall-grid"></div>
+			</section>
+
+			<section class="section section-split" id="admission-test">
+				<div class="section-heading narrow">
+					<span class="eyebrow">Admission test</span>
+					<h2>Office contacts and reminder.</h2>
+					<p>Test dates can change, so the app points students to the admission office for confirmation.</p>
+				</div>
+
+				<div class="contact-grid">
+					<article class="contact-card">
+						<h3>Admission office</h3>
+						<ul id="admission-contacts"></ul>
+					</article>
+					<article class="contact-card">
+						<h3>Support note</h3>
+						<p>
+							Admission test schedules are subject to change. Keep the office number and email ready for the latest updates.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="section" id="admin">
+				<div class="section-heading">
+					<span class="eyebrow">Admin panel</span>
+					<h2>A clear view of the maintenance workflow.</h2>
+					<p>The original app offers user management and app-data updates, with some features intentionally unavailable.</p>
+				</div>
+
+				<div class="admin-grid">
+					<article class="admin-card">
+						<h3>Registered users</h3>
+						<p>View total users or inspect all stored registration data.</p>
+					</article>
+					<article class="admin-card">
+						<h3>Content updates</h3>
+						<p>Department, seat, hall, and admission-test data can be refreshed from one place.</p>
+					</article>
+					<article class="admin-card unavailable">
+						<h3>Future actions</h3>
+						<p>Update and delete user data are shown in the C app as unavailable placeholders.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="section docs-section" id="docs">
+				<div class="docs-card">
+					<span class="eyebrow">Documentation</span>
+					<h2>Built from the project docs and source code.</h2>
+					<p>
+						This interface reflects the README, the SRS/final report references, and the menu logic in <span>src/main.c</span>.
+						It is structured for future extension if the C backend is later replaced with an API.
+					</p>
+				</div>
+			</section>
+		</main>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+</html>
